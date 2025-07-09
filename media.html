@@ -12,6 +12,7 @@ main{
     margin: 1rem auto;
     padding: 1rem;
 }
+
 .media{
     display: flex;
     flex-direction: column;
@@ -19,24 +20,41 @@ main{
     align-items: center;
     gap: 1rem;
     height: 100%;
-    margin: 5rem auto;
+    margin: 2rem auto 5rem;
     width: 50%;
     font-size: 1.5rem;
     padding: 1.5rem;
 }
 
-a{
+nav a{
     color: black;
     text-decoration: none;
     font-size: 1.2rem;
     border: 1px solid black;
-    border-radius: 2rem;
-    margin: 5rem;
+    border-radius: 5px;
+    margin: 5rem 2rem;
     padding: 1rem;
 }
 
 nav{
     margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px){
+  .iframe{
+    width: 50vw;
+  }
+
+  iframe{
+    width: 50vw;
+  }
+
+  .picture h2{
+    margin-left: -2.8rem;
+  }
 }
   </style>
   <body>
@@ -64,16 +82,17 @@ nav{
             <div class="audio">
                 <h2>Audio Element</h2>
                 <p>I'm supposed to record an audio but I'd be sharing a song from one of the artists I listen to or one I
-                    have recently enjoyed listening to. Whichever one I find first. I'd share it here.
+                    have recently enjoyed listening to. Whichever one I find first. I'd share it here. <br>
+                    The song name is Cure by The Rose.
                 </p>
                 <audio src="./assets/audio/Cure.mp3" controls></audio>
             </div>
         
             <div class="video">
                 <h2>Video Element</h2>
-                <p>In the process of doing this exercise, I realized I don't have any video editing skill or resources
-                    So instead of sharing a video telling you a couple of things about myself, I'd be sharing a funny video or clip
-                    Whatever it is I find in my gallery sha.
+                <p>In the process of doing this exercise, I realized I don't have any video editing skill or resources.
+                    So, instead of sharing a video telling you a couple of things about myself, I'd be sharing a funny video or clip
+                    Whatever it is I find in my gallery first.
                 </p>
                 <p>I randomly created a video, it's my first attempt at creating one. Anyways it's a slideshow showing a screenshot of some book reviews
                     I've written. I'm not a professional reviewer but I enjoy reading and sharing my thoughts on books I've read.
@@ -89,7 +108,7 @@ nav{
                     Since I don't have a YouTube channel, I've decided to share a video from the Run Jin series.
                     It's one of the ways I wind down. Watch a YT video or read a book but since I can't share a book with iframe,
                     I'll share a video. It's hilarious and it has subtitles. There's charisma, goofiness and wit. 
-                    You'd enjoy it if it's your kind of thing
+                    You'd enjoy it if it's your kind of thing.
                 </p>
                 <iframe
                   width="560"
